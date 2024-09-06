@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "demo",
+  "version": "1.0",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "64": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "24": "icon.png",
+      "32": "icon.png"
+    },
+    "default_title": "demo",
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
