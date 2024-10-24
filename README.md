@@ -31,3 +31,5 @@ npm install
 - /scripts               可純放擴展腳本的目錄 (build 時，會經過獨立的編譯)
 - /public               靜態目錄，可存放 icon
 - /src                     vue 代碼目錄
+
+P.S. 似乎可以移除 chrome-types 套件而僅用 @types/chrome 即可，下次將該套件移除，並且添加一些可以驗證型別的代碼到這個 demo 中，好讓安裝完就能夠驗證

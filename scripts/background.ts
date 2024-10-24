@@ -1,3 +1,4 @@
+
 const checkChromeObject = (): void => {
   if (chrome && chrome.runtime) {
     // 可以在後台控制台看到訊息
